@@ -12,7 +12,7 @@ body{
 .homepage{
     height: 69vw;
     overflow: hidden;
-    background-image: url("/Assets/462927.jpg");
+    background-image: url("./Assets/462927.jpg");
     background-size: contain;
     background-repeat: no-repeat;
 }
