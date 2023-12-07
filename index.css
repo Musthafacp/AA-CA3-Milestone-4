@@ -1,0 +1,141 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow: scroll;
+}
+
+.homepage{
+    height: 69vw;
+    overflow: hidden;
+    background-image: url("/Assets/462927.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: flex;
+    padding: 2%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.29);
+    background-blend-mode: lighten;
+    align-items: center;
+}
+
+.nav_heading{
+    padding-left: 7%;
+    font-size: 2em;
+    color: white;
+}
+
+nav a{
+    padding-right: 3.5%;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+#forImage{
+    height: 200%;
+    margin-left: 1%;
+}
+
+#home{
+    padding-left: 49%;
+}
+
+.welcome{
+    font-size: 5em;
+    color: rgb(255, 255, 255);
+    padding: 10% 0% 0% 7%;
+}
+
+.abouttheweb{
+    font-size: 2em;
+    padding: 2% 0% 0% 7%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+#Get_more_button{
+    width: 10.5%;
+    height: 4.5%;
+    font-weight: bolder;
+    font-size: .95em;
+    margin: 4% 0% 0% 17%;
+    border-radius: .5em;
+    border: 0px;
+    color: white;
+    background-color: #B99470;
+}
+
+/* // */
+
+#randompage{
+    margin-top: -10%;
+    display: grid;
+    justify-content: center;
+    background-color: #B99470;
+}
+
+.random_meals_head{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 3em;
+}
+
+.random_meals{
+    width: fit-content;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 3%;
+    justify-content: center;
+}
+
+.cell{
+    width: 270px;
+    height: 270px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.cell_image{
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+.cell_image_name{
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+}
+
+
+/* /////INGREDIANTS */
+
+/* 
+.mainhomepage{
+    filter: blur(8px);
+  -webkit-filter: blur(8px); 
+}
+
+body{
+    overflow: hidden;
+}
+
+
+
+
+#ingrediants{
+    position: relative;
+    bottom: 700px;
+} */
