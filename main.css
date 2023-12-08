@@ -23,6 +23,10 @@ nav{
     color: white;
 }
 
+#hamburg{
+    display: none;
+}
+
 nav a{
     padding-right: 3.5%;
     font-size: 1.5em;
@@ -73,23 +77,15 @@ nav a{
     height: 55px;
 }
 
-/* .body{
-    margin-top: 3%;
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    height: 25em;
-    width: 80%;
-    overflow: auto;
-    background-color: #c8ab8d;
-} */
 
 .firstHeads{
     padding-top: 3%;
+    color: white;
 }
 
 .firstHead{
     margin-top: -5%;
+    color: white;
 }
 
 .Latest{
@@ -129,6 +125,10 @@ nav a{
     text-align: center;
 }
 
+#popHead{
+    color: rgb(194, 194, 194);
+}
+
 .Popular{
     width: fit-content;
     margin-top: 7%;
@@ -151,11 +151,13 @@ nav a{
     width: 230px;
     height: 230px;
     overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px rgb(56, 55, 55) ;
 }
 
 #cell_images_name{
     font-size: 1.2em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -163,20 +165,285 @@ nav a{
     width: 230px;
     height: 230px;
     overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px rgb(56, 55, 55) ;
 }
 
 #cell_images_name_pop{
     font-size: 1.2em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 #searched_item_images{
     width: 230px;
     height: 230px;
     overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px rgb(56, 55, 55) ;
 }
 
 #searched_item_images_name{
     font-size: 1.2em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+@media all and (max-width : 320px){
+    nav{
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.29);
+        background-blend-mode: lighten;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+    }
+    
+    #hamburg{
+        display: block;
+        width: 30px;
+        margin-left: 70px;
+    }
+    .nav_heading{
+        padding-left: 35%;
+        font-size: 1em; 
+        color: white;
+    }
+    
+    nav a{
+        display: none;
+    }
+    
+    #forImage{
+        display: none;
+    }
+    
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .input{
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #inputBox{
+        width: 20em;
+        height: 30px;
+        border-radius: 10px;
+        border: 0px;
+        padding-left: 4%;
+        font-size: x-small;
+    }
+    
+    #searchbox{
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        margin-left: -12%;
+        border-radius: 0px 10px 10px 0px;
+        background-color: #443623;
+        width: 30px;
+        height: 30px;
+    }
+
+    #searchbox img{
+        width: 10px;
+        height: 10px;
+    }
+    
+    .firstHeads{
+        padding-top: 3%;
+        color: white;
+        text-align: center;
+    }
+    
+    .firstHead{
+        text-align: center;
+        margin-top: -5%;
+        color: white;
+    }
+    
+    .Latest{
+        width: fit-content;
+        margin-top: 7%;
+        margin-right: 60% ;
+        margin-bottom: 4%;
+        display: grid;
+        grid-template-columns: repeat(1,25%);
+        grid-gap: 2%;
+        justify-content: center;
+    }
+    
+    .Items{
+        width: 270px;
+        height: 270px;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    
+    .Searched{
+        width: fit-content;
+        margin-top: 7%;
+        margin-bottom: 4%;
+        display: grid;
+        grid-template-columns: repeat(1,25%);
+        grid-gap: 2%;
+        justify-content: center;
+        margin-right: 60% ;
+    }
+    
+    .SearchedItems{
+        width: 270px;
+        height: 270px;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #dishIMG{
+        width: 100px;
+    }
+    
+    #popHead{
+        color: rgb(194, 194, 194);
+        margin-top: 17em;
+    }
+    
+    .Popular{
+        width: fit-content;
+        margin-top: 7%;
+        margin-right: 60% ;
+        margin-bottom: 4%;
+        display: grid;
+        grid-template-columns: repeat(1,25%);
+        grid-gap: 2%;
+        justify-content: center;
+    }
+    
+    .popIng{
+        width: 270px;
+        height: 270px;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #cell_images{
+        width: 230px;
+        height: 230px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 3px 3px 7px rgb(56, 55, 55) ;
+    }                      
+       
+    #cell_images_name{
+        font-size: 1.2em;
+        color: rgb(255, 255, 255);
+    }
+    
+    
+    #cell_images_pop{
+        width: 230px;
+        height: 230px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 3px 3px 7px rgb(56, 55, 55) ;
+    }
+    
+    #cell_images_name_pop{
+        font-size: 1.2em;
+        color: rgb(255, 255, 255);
+    }
+    
+    #searched_item_images{
+        width: 230px;
+        height: 230px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 3px 3px 7px rgb(56, 55, 55) ;
+    }
+    
+    #searched_item_images_name{
+        font-size: 1.2em;
+        color: rgb(255, 255, 255);
+    }
+
+    
+         #ingrediants{
+            display: block;
+            margin: 1%;
+            visibility: hidden;
+            background-color: #c0a988;
+            padding: 30px;
+            margin-left: 15%;
+            box-shadow: #443623 3px 2px 10px;
+            border-radius: 50px;
+        }
+
+        .dishname{
+            display: block;
+        }
+    
+        .ingrediants_cells{
+            width: 100px;
+            height: 100px;
+            background-color: #695436;
+            display: grid;
+            /* grid-template-columns: repeat(1, 100%); */
+            justify-content: center;
+            gap: 2%;
+            overflow: auto;
+        }
+        
+        .ing{
+            display: none;
+        }
+
+        .ingrediants_button{
+            height: 30px;
+            font-weight: bolder;
+            background-color: #443623;
+            color: white;
+            border: 0px;
+            margin: 3%;
+            border-radius: 10px;
+            width: 50px;
+        }
+        
+        .image{
+            width: 10%;
+        }
+    
+        .celling_image img{
+            text-align: center;
+            width: 30px;
+        }
+        
+        .celling{
+            padding: 5%;
+        }
+        
+        .celling_image_name{
+            color: white;
+            font-size: 1em;
+            text-align: center;
+        }
+        
+        #inglist{
+            padding:0% 0% 0% 2%;
+            font-size: 1em;
+            color: black;
+            list-style:none;
+        
+        }
+        
+        .li{
+            text-decoration: none;
+        }
 }
