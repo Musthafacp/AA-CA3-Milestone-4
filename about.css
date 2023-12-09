@@ -11,7 +11,7 @@
 body{
     overflow: hidden;
     background-color: #B99470;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav{
@@ -64,13 +64,9 @@ nav a{
 
 .about-head{
     padding-left: 4%;
-    padding-top: 2%;
+    margin-top: 3%;
     font-size: 3em;
     color: white;
-}
-
-.languages-used{
-    padding-left: 4%;
 }
 
 .about-back-button{
@@ -96,6 +92,30 @@ nav a{
 }
 
 @media all and (max-width: 375px) and (min-width : 320px){
+    nav{
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.29);
+        background-blend-mode: lighten;
+        align-items: center;
+    }
+    
+    .nav_heading{
+        padding-left: 5%;
+        font-size: 2em; 
+        color: white;
+    }
+    
+    nav a{
+        display: none;
+    }
+    
+    #forImage{
+        display: none;
+    }
+    
+    #home{ 
+        padding-left: 50%;
+    }
     .about-div{
         font-family: sans-serif;
         margin: 3%;
@@ -132,19 +152,35 @@ nav a{
     }
 } 
 
-@media all and (max-width: 320px){
+@media all and (max-width: 480px) {
+    nav{
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.29);
+        background-blend-mode: lighten;
+        align-items: center;
+    }
+    
+    .nav_heading{
+        padding-left: 5%;
+        font-size: 2em; 
+        color: white;
+    }
+    
     nav a{
         display: none;
     }
-    .about-head{
-        padding-left: 4%;
-        padding-top: 3%;
-        font-size: 3em;
+    
+    #forImage{
+        display: none;
+    }
+    
+    #home{ 
+        padding-left: 50%;
     }
     .about-div{
         font-family: sans-serif;
         margin: 3%;
-        height: 250vw;
+        height: 175vw;
         background-color: #C70039;
         background-size: cover;
         text-align: left;
@@ -155,6 +191,7 @@ nav a{
         margin: 2% 4% 4% 4%;
         text-align: left;
         line-height: 200%;
+        height: 380px;
         font-size: 1em;
         overflow: auto;
         padding-left: 10px;
@@ -170,171 +207,76 @@ nav a{
         color: white;
         font-size: 1em;
         font-weight: bold;
-        position: relative;
+        position: fixed;
         left: 67%;
-        bottom: 2.3%;
+        bottom: 1.5%;
     }
-}
-/* 
-@media all and (max-width: 456px) and (min-width: 375px){
+} 
+
+
+@media all and (max-width: 768px) {
+    nav{
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.29);
+        background-blend-mode: lighten;
+        align-items: center;
+    }
+    
+    .nav_heading{
+        padding-left: 5%;
+        font-size: 2em; 
+        color: white;
+    }
+    
+    nav a{
+        display: none;
+    }
+    
+    #forImage{
+        display: none;
+    }
+    
+    #home{ 
+        padding-left: 50%;
+    }
     .about-div{
         font-family: sans-serif;
-        margin: 1%;
-        height: 600px;
+        margin: 3%;
+        height: 175vw;
         background-color: #C70039;
         background-size: cover;
         text-align: left;
     
     }
+    .para-div{
+        background-color: white;
+        margin: 2% 4% 4% 4%;
+        text-align: left;
+        line-height: 200%;
+        height: 410px;
+        font-size: 1em;
+        overflow: auto;
+        padding-left: 10px;
+    }
+    .para-headings{
+        font-size: 1.1em;
+    }
     .about-back-button{
         width: 80px;
         text-align: center;
         height: 35px;
-        width: 80px;
         background-color: black;
         color: white;
         font-size: 1em;
         font-weight: bold;
         position: fixed;
-        left: 72%;
-        bottom: 3%;
+        left: 67%;
+        bottom: 5.5%;
     }
-    .para-div{
-        background-color: rgb(255, 255, 255);
-        margin: 2% 4% 4% 4%;
-        height: 440px;
-        text-align: left;
-        line-height: 200%;
-        font-size: 1em;
-        overflow: auto;
-        padding-left: 10px;
+    .about-head{
+        padding-left: 4%;
+        margin-top: 7%;
+        font-size: 3em;
+        color: white;
     }
 }
-
- 
- @media all and (max-width: 768px) and (min-width: 456px){
-    .about-back-button{
-        width: 80px;
-        text-align: center;
-        height: 35px;
-        width: 80px;
-        background-color: black;
-        color: white;
-        font-size: 1em;
-        font-weight: bold;
-        position: fixed;
-        left: 79%;
-        bottom: 10%;
-    }
-    .about-div{
-        font-family: sans-serif;
-        margin: 1%;
-        height: 600px;
-        background-color: #C70039;
-        background-size: cover;
-        text-align: left;
-    
-    }
-} 
-
- @media all and (max-width: 1024px) and (min-width : 769px){
-    .about-div{
-        font-family: sans-serif;
-        margin: 1%;
-        height: 800px;
-        background-color: #C70039;
-        background-size: cover;
-        text-align: left;
-    
-    }
-    .about-back-button{
-        width: 100px;
-        text-align: center;
-        height: 40px;
-        width: 80px;
-        background-color: #C70039;
-        color: white;
-        font-size: 1em;
-        font-weight: bold;
-        position: fixed;
-        left: 82%;
-        bottom: 10%;
-    }
-    .para-div{
-        background-color: rgb(255, 255, 255);
-        margin: 2% 4% 4% 4%;
-        height: 640px;
-        text-align: left;
-        line-height: 200%;
-        font-size: 1.3em;
-        overflow: auto;
-        padding-left: 10px;
-    }
-}
-@media all and (max-width: 1080px) and (min-width: 1024px) {
-    .about-div{
-        font-family: sans-serif;
-        margin: 1%;
-        height: 750px;
-        background-color: #C70039;
-        background-size: cover;
-        text-align: left;
-    
-    }
-    .about-back-button{
-        width: 80px;
-        text-align: center;
-        height: 35px;
-        width: 80px;
-        background-color: #C70039;
-        color: white;
-        font-size: 1em;
-        font-weight: bold;
-        position: fixed;
-        left: 84%;
-        bottom: 20%;
-    }
-    .para-div{
-        background-color: white;
-         height: 550px;
-        text-align: left;
-        line-height: 200%;
-        font-size: 1.2em;
-        overflow: auto;
-        padding-left: 10px;
-    }
-} 
-
-@media all and (min-width: 1100px){
-    .about-div{
-        font-family: sans-serif;
-        margin: 1%;
-        height: 650px;
-        background-color: #C70039;
-        background-size: cover;
-        text-align: left;
-    
-    }
-    .about-back-button{
-        width: 80px;
-        text-align: center;
-        height: 35px;
-        width: 80px;
-        background-color: #C70039;
-        color: white;
-        font-size: 1em;
-        font-weight: bold;
-        position: fixed;
-        left: 84%;
-        bottom: 20%;
-    }
-    .para-div{
-        background-color: white;
-         height: 450px;
-        text-align: left;
-        line-height: 200%;
-        font-size: 1.2em;
-        overflow: auto;
-        padding-left: 10px;
-    }
-}  */

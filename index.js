@@ -7,6 +7,20 @@ var ingrediants_button = document.querySelector(".ingrediants_button");
 var dish = document.getElementById("dish");
 var dishImage = document.getElementById("dishImage");
 
+
+
+var hamburger = document.getElementById("hamburg");
+var menuLinks = document.getElementById('menu-links');
+var home = document.getElementById("homee")
+
+    home.addEventListener("click", ()=>{
+        menuLinks.style.display = "none";
+    })
+    hamburger.addEventListener("click", function() {
+        menuLinks.style.display = (menuLinks.style.display == 'none' || menuLinks.style.display == '') ? 'block' : 'none';
+    });
+
+
 for (let i = 0; i < 8; i++) {
     fetch("https://www.themealdb.com/api/json/v1/1/random.php")
         .then(response => response.json())
@@ -51,7 +65,6 @@ function getEightRandom(data) {
 
             ingrediants.style.visibility = "visible";
             mainhomepage.style.filter = 'blur(8px)';
-            // body.style.overflow = 'hidden';
         });
     });
 

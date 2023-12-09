@@ -14,6 +14,14 @@ var dishname = document.querySelector(".dishname")
 firsthead.style.display = "none";
 
 
+var hamburger = document.getElementById("hamburg");
+
+    hamburger.addEventListener("click", function() {
+        var menuLinks = document.getElementById('menu-links');
+        menuLinks.style.display = (menuLinks.style.display === 'none' || menuLinks.style.display === '') ? 'block' : 'none';
+    });
+
+
 if (flag == 0) {
 
     for (let i = 0; i < 8; i++) {
@@ -72,7 +80,6 @@ if (flag == 0) {
                 ingrediants.style.bottom = '80em';
                 ingrediants.style.display = "grid";
                 mainhomepage.style.filter = 'blur(8px)';
-                // body.style.overflow = 'hidden';
                 ingrediants.style.marginLeft = "15%";
                 ingrediants.style.width = "70%"
             })
@@ -190,8 +197,6 @@ if (flag == 0) {
 
                 ingrediants.style.visibility = "visible"
                 ingrediants.style.position = 'relative';
-                ingrediants.style.bottom = '-60em';
-                ingrediants.style.right = '8em';
                 ingrediants.style.display = "grid";
                 mainhomepage.style.filter = 'blur(8px)';
                 body.style.height = '100px';
@@ -210,8 +215,6 @@ if (flag == 0) {
             body.style.overflow = 'auto'
         })
     }
-
-    // var inglist = document.getElementById("inglist")
 
     function displayIngredients(data) {
         const array = data.meals[0];

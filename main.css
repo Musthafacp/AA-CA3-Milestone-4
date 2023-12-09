@@ -6,8 +6,8 @@
 }
 
 body{
-    /* overflow: hidden; */
     background-color: #B99470;
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav{
@@ -16,6 +16,8 @@ nav{
     background-blend-mode: lighten;
     align-items: center;
 }
+
+
 
 .nav_heading{
     padding-left: 5%;
@@ -33,6 +35,11 @@ nav a{
     font-weight: bolder;
     text-decoration: none;
     color: white;
+}
+
+nav a:hover {
+    text-shadow: 2px 2px 4px black;
+    transition: text-shadow 1s;
 }
 
 #forImage{
@@ -64,6 +71,7 @@ nav a{
     border: 0px;
     padding-left: 2%;
     font-size: large;
+    font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #searchbox{
@@ -126,7 +134,7 @@ nav a{
 }
 
 #popHead{
-    color: rgb(194, 194, 194);
+    color: white;
 }
 
 .Popular{
@@ -187,6 +195,188 @@ nav a{
     color: rgb(255, 255, 255);
 }
 
+
+
+
+
+
+
+
+
+/* INGREDIANTS POPUP */
+
+
+#ingrediants{
+    display: grid;
+    position: absolute;
+    bottom: -850px;
+    margin: 7% 0% 0% 10%;
+    width: 80%;
+    grid-template-columns: 30% 60%;
+    grid-gap: 6%;
+    visibility: hidden;
+    background-color: #c0a988;
+    padding: 70px;
+    margin-left: 11%;
+    box-shadow: #443623 3px 2px 10px;
+    border-radius: 50px;
+}
+
+#ingrediants_cells{
+    grid-row: span 3;
+}
+
+.ingrediants_cells{
+    width: 650px;
+    height: 400px;
+    background-color: #c0a988;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-content: center;
+    gap: 2%;
+    overflow: auto;
+}
+
+.ingrediants_button{
+    height: 300%;
+    font-weight: bolder;
+    background-color: #443623;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    width: 280px;
+}
+
+.celling_image{
+    text-align: center;
+    width: 30%;
+}
+
+.celling{
+    padding: 5%;
+}
+
+.celling_image_name{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+#inglist{
+    padding:0% 0% 0% 2%;
+    font-size: 1.6em;
+    color: black;
+    list-style:none;
+
+}
+
+.li{
+    text-decoration: none;
+}
+
+#hamburg{
+    display: none;
+}
+#menu-links{
+    display: none;
+}
+
+@media all and  (max-width : 320px){
+    
+
+    #menu-links a{
+        display: block;
+        background-color: #c0a988;
+        padding: 30px;
+        text-decoration: none;
+        font-size: 0.8em;
+        text-align: center;
+        z-index: 3;
+        color: white;
+        font-weight: bold;
+    }
+    body{
+        overflow:visible;
+    }
+    #dishIMG{
+        width: 150px;
+        margin-top: 20%;
+    }
+     #ingrediants{
+        display: block;
+        margin: 1%;
+        visibility: hidden;
+        background-color: #c0a988;
+        padding-left: 0px;
+        
+
+
+        margin: 0% 0% 0% 10%;
+        grid-template-columns: 100%;
+        grid-template-rows: 20%;
+        grid-gap: 2%;
+        background-color: #c0a988;
+        padding: 30px;
+        box-shadow: #443623 3px 2px 10px;
+        border-radius: 50px;
+    }
+    .ing{
+        display: none;
+    }
+
+    .ingrediants_cells{
+        width: 100px;
+        height: 100px;
+        background-color: #c0a988;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        justify-content: center;
+        gap: 2%;
+        overflow: auto;
+    }
+
+    .ingrediants_button{
+        height: 30px;
+        font-weight: bolder;
+        background-color: #443623;
+        color: white;
+        border: 0px;
+        margin: 3%;
+        border-radius: 10px;
+        width: 150px;
+    }
+    
+    .image{
+        width: 10%;
+    }
+
+    .celling_image img{
+        text-align: center;
+        width: 30px;
+    }
+    
+    .celling{
+        padding: 5%;
+    }
+    
+    .celling_image_name{
+        color: white;
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    #inglist{
+        padding:0% 0% 0% 2%;
+        font-size: 1em;
+        color: black;
+        list-style:none;
+    
+    }
+    
+    .li{
+        text-decoration: none;
+    }
+}
 @media all and (max-width : 320px){
     nav{
         display: flex;
@@ -373,77 +563,287 @@ nav a{
         font-size: 1.2em;
         color: rgb(255, 255, 255);
     }
+}
 
+@media all and (max-width: 768px) {
     
-         #ingrediants{
-            display: block;
-            margin: 1%;
-            visibility: hidden;
-            background-color: #c0a988;
-            padding: 30px;
-            margin-left: 15%;
-            box-shadow: #443623 3px 2px 10px;
-            border-radius: 50px;
-        }
+    #menu-links a{
+        display: block;
+        background-color: #c0a988;
+        padding: 30px;
+        text-decoration: none;
+        font-size: 0.8em;
+        text-align: center;
+        z-index: 3;
+        color: white;
+        font-weight: bold;
+    }
+    body{
+        overflow:visible;
+    }
+    #dishIMG{
+        width: 150px;
+        margin-top: 20%;
+    }
+     #ingrediants{
+        display: block;
+        margin: 1%;
+        visibility: hidden;
+        background-color: #c0a988;
+        padding-left: 0px;
+        
 
-        .dishname{
-            display: block;
-        }
-    
-        .ingrediants_cells{
-            width: 100px;
-            height: 100px;
-            background-color: #695436;
-            display: grid;
-            /* grid-template-columns: repeat(1, 100%); */
-            justify-content: center;
-            gap: 2%;
-            overflow: auto;
-        }
-        
-        .ing{
-            display: none;
-        }
 
-        .ingrediants_button{
-            height: 30px;
-            font-weight: bolder;
-            background-color: #443623;
-            color: white;
-            border: 0px;
-            margin: 3%;
-            border-radius: 10px;
-            width: 50px;
-        }
-        
-        .image{
-            width: 10%;
-        }
+        margin: 0% 0% 0% 10%;
+        grid-template-columns: 100%;
+        grid-template-rows: 20%;
+        grid-gap: 2%;
+        background-color: #c0a988;
+        padding: 30px;
+        box-shadow: #443623 3px 2px 10px;
+        border-radius: 50px;
+    }
+    .ing{
+        display: none;
+    }
+
+    .ingrediants_cells{
+        width: 100px;
+        height: 100px;
+        background-color: #c0a988;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        justify-content: center;
+        gap: 2%;
+        overflow: auto;
+    }
+
+    .ingrediants_button{
+        height: 30px;
+        font-weight: bolder;
+        background-color: #443623;
+        color: white;
+        border: 0px;
+        margin: 3%;
+        border-radius: 10px;
+        width: 150px;
+    }
     
-        .celling_image img{
-            text-align: center;
-            width: 30px;
-        }
-        
-        .celling{
-            padding: 5%;
-        }
-        
-        .celling_image_name{
-            color: white;
-            font-size: 1em;
-            text-align: center;
-        }
-        
-        #inglist{
-            padding:0% 0% 0% 2%;
-            font-size: 1em;
-            color: black;
-            list-style:none;
-        
-        }
-        
-        .li{
-            text-decoration: none;
-        }
+    .image{
+        width: 10%;
+    }
+
+    .celling_image img{
+        text-align: center;
+        width: 30px;
+    }
+    
+    .celling{
+        padding: 5%;
+    }
+    
+    .celling_image_name{
+        color: white;
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    #inglist{
+        padding:0% 0% 0% 2%;
+        font-size: 1em;
+        color: black;
+        list-style:none;
+    
+    }
+    
+    .li{
+        text-decoration: none;
+    }
+
+
+    nav{
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.29);
+        background-blend-mode: lighten;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+    }
+    
+    #hamburg{
+        display: block;
+        width: 30px;
+        margin-left: 70px;
+    }
+    .nav_heading{
+        padding-left: 35%;
+        font-size: 1em; 
+        color: white;
+    }
+    
+    nav a{
+        display: none;
+    }
+    
+    #forImage{
+        display: none;
+    }
+    
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .input{
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #inputBox{
+        width: 20em;
+        height: 30px;
+        border-radius: 10px;
+        border: 0px;
+        padding-left: 4%;
+        font-size: x-small;
+    }
+    
+    #searchbox{
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        margin-left: -12%;
+        border-radius: 0px 10px 10px 0px;
+        background-color: #443623;
+        width: 30px;
+        height: 30px;
+    }
+
+    #searchbox img{
+        width: 10px;
+        height: 10px;
+    }
+    
+    .firstHeads{
+        padding-top: 3%;
+        color: white;
+        text-align: center;
+    }
+    
+    .firstHead{
+        text-align: center;
+        margin-top: -5%;
+        color: white;
+    }
+    
+    .Latest{
+        width: fit-content;
+        margin-top: 7%;
+        margin-right: 60% ;
+        margin-bottom: 4%;
+        display: grid;
+        grid-template-columns: repeat(1,25%);
+        grid-gap: 2%;
+        justify-content: center;
+    }
+    
+    .Items{
+        width: 270px;
+        height: 270px;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    
+    .Searched{
+        width: fit-content;
+        margin-top: 7%;
+        margin-bottom: 4%;
+        display: grid;
+        grid-template-columns: repeat(1,25%);
+        grid-gap: 2%;
+        justify-content: center;
+        margin-right: 60% ;
+    }
+    
+    .SearchedItems{
+        width: 270px;
+        height: 270px;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #dishIMG{
+        width: 100px;
+    }
+    
+    #popHead{
+        color: rgb(194, 194, 194);
+        margin-top: 17em;
+    }
+    
+    .Popular{
+        width: fit-content;
+        margin-top: 7%;
+        margin-right: 60% ;
+        margin-bottom: 4%;
+        display: grid;
+        grid-template-columns: repeat(1,25%);
+        grid-gap: 2%;
+        justify-content: center;
+    }
+    
+    .popIng{
+        width: 270px;
+        height: 270px;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #cell_images{
+        width: 230px;
+        height: 230px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 3px 3px 7px rgb(56, 55, 55) ;
+    }                      
+       
+    #cell_images_name{
+        font-size: 1.2em;
+        color: rgb(255, 255, 255);
+    }
+    
+    
+    #cell_images_pop{
+        width: 230px;
+        height: 230px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 3px 3px 7px rgb(56, 55, 55) ;
+    }
+    
+    #cell_images_name_pop{
+        font-size: 1.2em;
+        color: rgb(255, 255, 255);
+    }
+    
+    #searched_item_images{
+        width: 230px;
+        height: 230px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 3px 3px 7px rgb(56, 55, 55) ;
+    }
+    
+    #searched_item_images_name{
+        font-size: 1.2em;
+        color: rgb(255, 255, 255);
+    }
 }
